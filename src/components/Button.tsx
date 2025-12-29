@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import type { ButtonHTMLAttributes, ReactNode } from 'react'
 
 type ButtonRole = 'primary' | 'secondary' | 'subtle'
 type ButtonVariant = 'accent' | 'success' | 'danger'
