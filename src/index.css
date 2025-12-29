@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* JUST Sans Variable Font */
+@font-face {
+  font-family: "JUST Sans Variable";
+  src: url("./assets/fonts/JUSTSansVariable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Royal DS Tokens */
+@theme {
+  /* Colors */
+  --color-royal-bg: #0c0f17;
+  --color-royal-surface: #1d202b;
+  --color-royal-accent: #c2f141;
+  --color-royal-text: #dbdcde;
+  --color-royal-text-muted: #9ca3af;
+
+  /* Button Accent Colors (Gradient stops) */
+  --color-btn-accent-from: #707481;
+  --color-btn-accent-via1: #adb0b8;
+  --color-btn-accent-via2: #c8cad0;
+  --color-btn-accent-to: #ebecee;
+  --color-btn-accent-text: #0c0f17;
+
+  /* Button Success Colors */
+  --color-btn-success-bg: #166534;
+  --color-btn-success-hover: #15803d;
+  --color-btn-success-active: #14532d;
+  --color-btn-success-text: #dcfce7;
+
+  /* Button Danger Colors */
+  --color-btn-danger-bg: #d14031;
+  --color-btn-danger-hover: #b91c1c;
+  --color-btn-danger-active: #750000;
+  --color-btn-danger-border: #900000;
+  --color-btn-danger-text: #ffd2c9;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Font Family */
+  --font-sans: "JUST Sans Variable", system-ui, sans-serif;
+}
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased bg-royal-bg text-royal-text;
+  }
+}
