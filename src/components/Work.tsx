@@ -1,3 +1,4 @@
+import Badge from './Badge'
 import Heading from './Heading'
 
 interface Project {
@@ -57,12 +58,9 @@ const Work = () => {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="text-xs bg-royal-bg text-royal-text-muted px-3 py-1 rounded-sm"
-                    >
+                    <Badge key={tagIndex} variant="brand">
                       {tag}
-                    </span>
+                    </Badge>
                   ))}
                 </div>
               </div>

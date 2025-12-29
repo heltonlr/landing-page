@@ -47,8 +47,8 @@ const variantStyles: VariantStylesMap = {
     strong: 'bg-[#ef4444] text-white',
   },
   brand: {
-    default: 'bg-[#2a3317] text-royal-accent',
-    strong: 'bg-royal-accent text-[#0c0f17]',
+    default: 'bg-royal-accent text-[#0c0f17]',
+    strong: 'bg-[#d4ff4d] text-[#0c0f17]',
   },
 }
 
